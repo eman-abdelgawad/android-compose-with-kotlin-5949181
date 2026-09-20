@@ -14,7 +14,7 @@ plugins {
 android {
     namespace = "com.example.red30"
     compileSdk = 35
-    compileSdkPreview = "Baklava"
+    // compileSdkPreview = "Baklava"
 
     defaultConfig {
         applicationId = "com.example.red30"

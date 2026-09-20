@@ -53,7 +53,7 @@ private fun Scaffold0103(modifier: Modifier = Modifier) {
             ) {
                 Text(
                     modifier = Modifier.fillMaxWidth(),
-                    text = "This is my primary content",
+                    text = "primary content",
                     textAlign = TextAlign.Center,
                     style = MaterialTheme.typography.headlineLarge
                 )
