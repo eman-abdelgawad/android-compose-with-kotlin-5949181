@@ -16,7 +16,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.tooling.preview.Devices
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.example.red30.compose.ui.theme.Red30TechTheme
 
 @Composable
@@ -62,8 +65,31 @@ private fun Scaffold0103(modifier: Modifier = Modifier) {
     }
 }
 
+
 @Preview(showBackground = true)
 @Composable
 private fun Scaffold0103Preview() {
     Scaffold0103()
+}
+
+@Composable
+fun myScreen(modifier: Modifier = Modifier){
+        Text(
+            text = "Hello World",
+            modifier = Modifier.padding(16.dp),
+            fontSize = 40.sp)
+}
+
+@Preview(showBackground = true,
+    device = Devices.PIXEL_4_XL)
+@Composable
+fun myScreenPreview(){
+        myScreen()
+}
+
+@Preview(showBackground = true,
+    device = Devices.NEXUS_5)
+@Composable
+fun myScreenPreview2(){
+    myScreen()
 }
